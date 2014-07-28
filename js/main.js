@@ -1,1 +1,15 @@
 $("#splash").css("min-height", $(window).height() );
+$("#pic-break").css("min-width", $(window).width() );
+
+$('div.bgParallax').each(function(){
+	var $obj = $(this);
+
+	$(window).scroll(function() {
+		var yPos = -($(window).scrollTop() / $obj.data('speed')); 
+
+		var bgpos = '50% '+ yPos + 'px';
+
+		$obj.css('background-position', bgpos );
+ 
+	}); 
+});
