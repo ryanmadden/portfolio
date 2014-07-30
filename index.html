@@ -46,9 +46,9 @@
                         <!-- Collect the nav links, forms, and other content for toggling -->
                         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                           <ul class="nav navbar-nav">
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Portfolio</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <li><a name="about" href="#about">About</a></li>
+                            <li><a name="portfolio" href="#portfolio">Portfolio</a></li>
+                            <li><a name="contact" href="#contact">Contact</a></li>
                           </ul>
                         </div><!-- /.navbar-collapse -->
                       </div><!-- /.container-fluid -->
@@ -61,6 +61,9 @@
               <div id="title-block">
                 <h1 class="title">Ryan Madden</h1>
                 <h3 class="title">Web | Software | Design</h3>
+                <div id="down-arrow">
+                    <span class="glyphicon glyphicon-collapse-down" style="font-size:40px;" id="arrow"></span>
+                </div>
               </div>
             </div>
             <div id="about">
@@ -91,7 +94,6 @@
                     </div>
                 </div>
             </div>
-            <div class="pic-break bgParallax" id="mountains" data-speed="3"></div>
             <div id="contact">
                 <div id="about-title">
                     <h2>Contact</h2>
@@ -106,10 +108,13 @@
                     </div>
                 </div>
             </div>
+            <div class="pic-break bgParallax" id="mountains" data-speed="3"></div>
           </div>
         </div>
 
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
+
+        <script src="js/vendor/jquery.color-2.1.2.min.js"></script>
 
         <script src="js/vendor/bootstrap.min.js"></script>
 

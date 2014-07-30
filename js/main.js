@@ -1,6 +1,5 @@
 $("#splash").css("min-height", $(window).height() );
 $("#pic-break").css("min-width", $(window).width() );
-
 $('div.bgParallax').each(function(){
 	var $obj = $(this);
 
@@ -38,7 +37,49 @@ $(document).ready(function() {
        } else if ($(window).scrollTop()==0){
            $('#mainHeader').slideUp(1000);
        }
-   }
+   	}
 
-     });
+  	});
+  		$("#arrow").hover(function() {
+  			$(this).stop();
+  	        $(this).animate({color: "#C0C0C0"}, 'fast');
+	    }, function() {
+	    	$(this).stop();
+	        $(this).animate({color: "white"}, 'fast');
+
+	    });
+
+	$('#arrow').click(function() {
+	$('html, body').animate({
+		scrollTop: $('#about').offset().top-60
+		}, 500);
+	})
+	  // scroll handler
+  var scrollToDiv = function( id ) {
+    // grab the element to scroll to based on the name
+    var elem = $("div[id='"+ id +"']");
+    // if that didn't work, look for an element with our ID
+    if ( typeof( elem.offset() ) === "undefined" ) {
+      elem = $("#"+id);
+    }
+    // if the destination element exists
+    if ( typeof( elem.offset() ) !== "undefined" ) {
+      // do the scroll
+      $('html,body').stop();
+      $('html, body').animate({
+              scrollTop: elem.offset().top-($('#mainHeader').outerHeight(true) + 20)
+      }, 1000 );
+    }
+  };
+  // bind to click event
+  $("a").click(function( event ) {
+    // only do this if it's an anchor link
+    if ( $(this).attr("href").match("#") ) {
+      // cancel default event propagation
+      event.preventDefault();
+      // scroll to the location
+      var href = $(this).attr('href').replace('#', '')
+      scrollToDiv( href );
+    }
+  });
 })
