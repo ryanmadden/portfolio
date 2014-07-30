@@ -13,3 +13,32 @@ $('div.bgParallax').each(function(){
  
 	}); 
 });
+
+$(document).ready(function() {
+	$('li').click(function() {
+		$('li').each(function() {
+			if ($(this).hasClass('active')) {
+				$(this).removeClass('active');
+			};
+		})
+		if(!$(this).hasClass('active')) {
+			$(this).addClass('active');
+		}
+	})
+
+	var $starter = $(window).height()-(50);
+    $(window).scroll(function() {
+
+     if ($('#fullScreen').length)
+     {
+
+    
+        if ($(window).scrollTop()>= $starter){
+           $('#mainHeader').slideDown();
+       } else if ($(window).scrollTop()==0){
+           $('#mainHeader').slideUp(1000);
+       }
+   }
+
+     });
+})
