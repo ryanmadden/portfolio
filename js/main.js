@@ -1,3 +1,4 @@
+
 $("#splash").css("min-height", $(window).height() );
 $("#pic-break").css("min-width", $(window).width() );
 $('div.bgParallax').each(function(){
@@ -14,6 +15,11 @@ $('div.bgParallax').each(function(){
 });
 
 $(document).ready(function() {
+
+$(window).load(function() {
+        $("#cover").fadeOut(2000);
+    })
+
 	$('li').click(function() {
 		$('li').each(function() {
 			if ($(this).hasClass('active')) {
