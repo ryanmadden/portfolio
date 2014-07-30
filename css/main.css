@@ -142,6 +142,15 @@ h3 {
 	cursor: hand;
 }
 
+#cover {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 1999;
+    background:rgb(33,33,33);
+}
 
 /* ==========================================================================
    Author's custom styles
