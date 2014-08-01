@@ -56,10 +56,7 @@ $(window).load(function() {
 	    });
 
 	$('#arrow').click(function() {
-	$('html, body').animate({
-		scrollTop: $('#about').offset().top-60
-		}, 500);
-  $('#about-li').addClass('active');
+    $('#about-li').addClass('active');
 	})
 	  // scroll handler
   var scrollToDiv = function( id ) {
