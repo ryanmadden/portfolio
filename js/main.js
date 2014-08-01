@@ -31,6 +31,14 @@ $(window).load(function() {
 		}
 	})
 
+  $('.navbar-brand').click(function() {
+    $('li').each(function() {
+      if ($(this).hasClass('active')) {
+        $(this).removeClass('active');
+      };
+    })
+  })
+
 	var $starter = $(window).height()-(50);
     $(window).scroll(function() {
 
@@ -58,6 +66,9 @@ $(window).load(function() {
 	$('#arrow').click(function() {
     $('#about-li').addClass('active');
 	})
+  $('#arrow').click(function() {
+    $('#about-li').addClass('active');
+  })
 	  // scroll handler
   var scrollToDiv = function( id ) {
     // grab the element to scroll to based on the name
