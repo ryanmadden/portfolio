@@ -74,7 +74,7 @@ $(window).load(function() {
       // do the scroll
       $('html,body').stop();
       $('html, body').animate({
-              scrollTop: elem.offset().top-($('#mainHeader').outerHeight(true) + 20)
+              scrollTop: elem.offset().top-($('#mainHeader').outerHeight(true))
       }, 1000 );
     }
   };
