@@ -1,4 +1,4 @@
-
+$("#splash").css("background-position", "50%");
 $("#splash").css("min-height", $(window).height() );
 $("#pic-break").css("min-width", $(window).width() );
 $('div.bgParallax').each(function(){
