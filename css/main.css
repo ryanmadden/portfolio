@@ -15,11 +15,8 @@ body {
 #content {
 	float: none;
 	vertical-align: middle;
-
 	height:100%;
   	display:table;
-  	width: 100%;
-  	padding: 0;
 }
 
 #splash {
