@@ -1,6 +1,8 @@
-$("#splash").css("background-position", "50%");
+var xx = -($(window).scrollTop() / $('div.bgParallax').data('speed')); 
+$("#splash").css("background-position", '50% '+ xx + 'px');
 $("#splash").css("min-height", $(window).height() );
 $("#pic-break").css("min-width", $(window).width() );
+
 $('div.bgParallax').each(function(){
 	var $obj = $(this);
 
@@ -53,7 +55,7 @@ $(window).load(function() {
        }
    	}
 
-  	});
+  	}) 
   		$("#arrow").hover(function() {
   			$(this).stop();
   	        $(this).animate({color: "#C0C0C0"}, 'fast');
