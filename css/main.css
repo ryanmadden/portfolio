@@ -76,7 +76,7 @@ h3 {
 	border-bottom: 2px solid black;
 	margin-left: auto;
 	margin-right: auto;
-	margin-bottom: 50px;
+	margin-bottom: 20px;
 }
 
 .pic-break {
@@ -145,6 +145,16 @@ h3 {
 
 .navbar-collapse {
 	background-image: linear-gradient(to bottom, #FFF 0px, #F8F8F8 100%);
+}
+
+#headshot {
+	height: 175px;
+	width: 175px;
+}
+
+.row > * {
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 
 /* ==========================================================================
