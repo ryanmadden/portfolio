@@ -16,30 +16,31 @@ $('div.bgParallax').each(function(){
 	}); 
 });
 
+
 $(document).ready(function() {
 
-$(window).load(function() {
-        $("#cover").fadeOut(2000);
-    })
-
-	$('li').click(function() {
-		$('li').each(function() {
-			if ($(this).hasClass('active')) {
-				$(this).removeClass('active');
-			};
-		})
-		if(!$(this).hasClass('active')) {
-			$(this).addClass('active');
-		}
-	})
-
-  $('.navbar-brand').click(function() {
-    $('li').each(function() {
-      if ($(this).hasClass('active')) {
-        $(this).removeClass('active');
-      };
-    })
+  $(window).load(function() {
+    $("#cover").fadeOut(2000);
   })
+
+	// $('li').click(function() {
+	// 	$('li').each(function() {
+	// 		if ($(this).hasClass('active')) {
+	// 			$(this).removeClass('active');
+	// 		};
+	// 	})
+	// 	if(!$(this).hasClass('active')) {
+	// 		$(this).addClass('active');
+	// 	}
+	// })
+
+  // $('.navbar-brand').click(function() {
+  //   $('li').each(function() {
+  //     if ($(this).hasClass('active')) {
+  //       $(this).removeClass('active');
+  //     };
+  //   })
+  // })
 
 	var $starter = $(window).height()-(50);
     $(window).scroll(function() {
