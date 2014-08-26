@@ -100,4 +100,9 @@ $(document).ready(function() {
       scrollToDiv( href );
     }
   });
+
+  $('#resume').click(function() {
+    var win = window.open("./public/Madden_Ryan.pdf", '_blank');
+    win.focus();
+  });
 })
