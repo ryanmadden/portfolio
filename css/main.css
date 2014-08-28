@@ -70,6 +70,12 @@ h3 {
 
 }
 
+#portfolio {
+	/*margin-left: 10%;*/
+	/*margin-right: 10%;*/
+	margin-bottom: 50px;
+}
+
 .hrule {
 	height: 10px;
 	width: 100px;
@@ -182,6 +188,12 @@ a:hover {
 	padding-right: 40px;
 	margin-left: 20%;
 	margin-right: 20%;
+}
+
+.thumbnail {
+	max-width: 300px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 /* ==========================================================================
