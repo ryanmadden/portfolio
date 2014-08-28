@@ -85,7 +85,7 @@ $(document).ready(function() {
       // do the scroll
       $('html,body').stop();
       $('html, body').animate({
-              scrollTop: elem.offset().top-($('#mainHeader').outerHeight(true))
+              scrollTop: elem.offset().top-70
       }, 1000 );
     }
   };
