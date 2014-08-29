@@ -56,7 +56,11 @@ $(document).ready(function() {
        }
    	}
 
+
+
   	}) 
+
+
   		$("#arrow").hover(function() {
   			$(this).stop();
   	        $(this).animate({color: "#C0C0C0"}, 'fast');
@@ -105,4 +109,13 @@ $(document).ready(function() {
     var win = window.open("./public/Madden_Ryan.pdf", '_blank');
     win.focus();
   });
+
+  $('.thumbnail').hover(function(){    
+    $(this).parent().fadeTo(200, 0.6);
+  }, function() {
+    $(this).parent().fadeTo(200, 1);
+  });
+
+  
+
 })
