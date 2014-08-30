@@ -4,6 +4,7 @@ html, body {
 
 body {
 	margin: 0;
+	padding-bottom: 70px;
 	position: relative;
 }
 
@@ -78,6 +79,11 @@ a {
 	/*margin-left: 10%;*/
 	/*margin-right: 10%;*/
 	margin-bottom: 50px;
+}
+
+#contact {
+	padding-bottom: 20%;
+	opacity: 0;
 }
 
 .hrule {
@@ -230,6 +236,11 @@ a:hover {
 #site-git {
 	width: 40px;
 	padding-top: 10px;
+}
+
+#submit-btn {
+	display: block;
+	margin: 0px auto;
 }
 
 /* ==========================================================================

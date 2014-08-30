@@ -23,6 +23,10 @@ $(document).ready(function() {
     $("#cover").fadeOut(2000);
   })
 
+  //$('input').val('');
+  //$('textarea').val('');
+  $('#contact').fadeTo(100, 1);
+
 	// $('li').click(function() {
 	// 	$('li').each(function() {
 	// 		if ($(this).hasClass('active')) {
@@ -116,6 +120,5 @@ $(document).ready(function() {
     $(this).parent().fadeTo(200, 1);
   });
 
-  
 
 })
