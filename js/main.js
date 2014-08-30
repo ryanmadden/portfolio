@@ -97,6 +97,7 @@ $(document).ready(function() {
       }, 1000 );
     }
   };
+
   // bind to click event
   $("a").click(function( event ) {
     // only do this if it's an anchor link
@@ -107,6 +108,10 @@ $(document).ready(function() {
       var href = $(this).attr('href').replace('#', '')
       scrollToDiv( href );
     }
+  });
+
+  $(".navbar-nav li a").click(function(event) {
+    $(".navbar-collapse").collapse('hide');
   });
 
   $('#resume').click(function() {
