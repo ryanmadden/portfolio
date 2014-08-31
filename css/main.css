@@ -194,6 +194,7 @@ a {
 	height: 100%;
 	z-index: 1999;
 	background:white;
+	display: none;
 }
 
 #headshot {
