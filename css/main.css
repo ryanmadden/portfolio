@@ -22,6 +22,7 @@ body {
 	display:table;
 }
 
+/*landing page*/
 #splash {
 	display:table-cell; 
 	vertical-align: middle;
@@ -34,11 +35,11 @@ body {
 	display: block;
 
 }
-
+/* Prevent image distortion on mobile due to background-attachment: fixed issue on mobile safari*/
 @media all and (max-width: 1400px;) {
 	#splash {
-        background-attachment: scroll;
-    }
+		background-attachment: scroll;
+	}
 }
 
 #title-block {
@@ -115,14 +116,12 @@ a {
 }
 
 #portfolio {
-	/*margin-left: 10%;*/
-	/*margin-right: 10%;*/
 	margin-bottom: 50px;
 }
 
+/* Add padding so Contact section can scroll to header when clicked*/
 #contact {
 	padding-bottom: 20%;
-	opacity: 0;
 }
 
 .hrule {
@@ -141,15 +140,6 @@ a {
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 5px;
-}
-
-#mountains {
-	background-attachment: fixed;
-	background-image: url('../img/mountains.jpg');
-	background-size: cover;
-	background-position: 50% 40%;
-	background-repeat: no-repeat; 
-	display: block;
 }
 
 #mainHeader {
@@ -179,6 +169,10 @@ a {
 	padding-right: 0px;
 }
 
+.navbar-collapse {
+	background-image: linear-gradient(to bottom, #FFF 0px, #F8F8F8 100%);
+}
+
 #down-arrow {
 	width: 50px;
 	height: 50px;
@@ -202,10 +196,6 @@ a {
 	background:white;
 }
 
-.navbar-collapse {
-	background-image: linear-gradient(to bottom, #FFF 0px, #F8F8F8 100%);
-}
-
 #headshot {
 	height: 175px;
 	width: 175px;
@@ -222,6 +212,7 @@ a {
 	padding-bottom: 70px;
 }
 
+/* Prevent lines appearing on linke image hover */
 a:hover {
 	text-decoration: none;
 }
@@ -276,24 +267,3 @@ a:hover {
 	display: block;
 	margin: 0px auto;
 }
-
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

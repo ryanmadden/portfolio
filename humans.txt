@@ -3,13 +3,17 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    Ryan Madden
 
 # THANKS
-
-    <name>
+	
+	Jon Rovira
+    Peter French
+    Alex Kain
 
 # TECHNOLOGY COLOPHON
 
     HTML5, CSS3
     jQuery, Modernizr
+    Twitter Bootstrap
+
