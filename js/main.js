@@ -16,6 +16,24 @@ $('div.bgParallax').each(function(){
 	}); 
 });
 
+$(document).on('click','.navbar-collapse.in',function(e) {
+    if( $(e.target).is('a') ) {
+        $(this).collapse('hide');
+    }
+});
+
+  var $starter = $(window).height()-(50);
+
+     if ($('#fullScreen').length)
+     {
+
+    
+        if ($(window).scrollTop()>= $starter){
+           $('#mainHeader').slideDown();
+       } else if ($(window).scrollTop()==0){
+           $('#mainHeader').slideUp(1000);
+       }
+    }
 
 $(document).ready(function() {
 
@@ -110,10 +128,6 @@ $(document).ready(function() {
     }
   });
 
-  $(".navbar-nav li a").click(function(event) {
-    $(".navbar-collapse").collapse('hide');
-  });
-
   $('#resume').click(function() {
     var win = window.open("./public/Madden_Ryan.pdf", '_blank');
     win.focus();
@@ -124,6 +138,5 @@ $(document).ready(function() {
   }, function() {
     $(this).parent().fadeTo(200, 1);
   });
-
 
 })
