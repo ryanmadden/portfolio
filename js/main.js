@@ -1,20 +1,27 @@
-var xx = -($(window).scrollTop() / $('div.bgParallax').data('speed')); 
-$("#splash").css("background-position", '50% '+ xx + 'px');
 $("#splash").css("min-height", $(window).height() );
-$("#pic-break").css("min-width", $(window).width() );
+
+if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+ $("#splash").css("background-attachment", 'scroll');
+}
+else
+{
+  var xx = -($(window).scrollTop() / $('div.bgParallax').data('speed')); 
+$("#splash").css("background-position", '50% '+ xx + 'px');
+// $("#splash").css("width", $(window).width() );
 
 $('div.bgParallax').each(function(){
-	var $obj = $(this);
+  var $obj = $(this);
 
-	$(window).scroll(function() {
-		var yPos = -($(window).scrollTop() / $obj.data('speed')); 
+  $(window).scroll(function() {
+    var yPos = -($(window).scrollTop() / $obj.data('speed')); 
 
-		var bgpos = '50% '+ yPos + 'px';
+    var bgpos = '50% '+ yPos + 'px';
 
-		$obj.css('background-position', bgpos );
+    $obj.css('background-position', bgpos );
  
-	}); 
+  }); 
 });
+}
 
 $(document).on('click','.navbar-collapse.in',function(e) {
     if( $(e.target).is('a') ) {
