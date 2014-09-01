@@ -129,13 +129,6 @@ $(document).ready(function()
     }
   });
 
-  //Open resume on icon click
-  $('#resume').click(function()
-  {
-    var win = window.open("./public/Madden_Ryan.pdf", '_blank');
-    win.focus();
-  });
-
   //Fade thumbnails on hover
   $('.thumbnail').hover(function()
   {    
