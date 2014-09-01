@@ -46,14 +46,16 @@ if ($('#fullScreen').length)
   }
 }
 
-//On document ready
 $(document).ready(function() 
 {
 
-  //Fade out cover which obscures loading
+  //Fade pace, then fade out cover which obscures loading
   $(window).load(function() 
   {
-    $("#cover").fadeOut(2000);
+    $(".pace").fadeOut(500, function()
+    {
+      $("#cover").fadeOut(2000);
+  })
   })
 
   //Auto hide navbar on splash page

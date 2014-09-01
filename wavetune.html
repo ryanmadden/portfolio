@@ -38,13 +38,21 @@
 
     <!-- Modernizr -->
     <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+
+    <noscript><style> .jsonly { display: none } </style></noscript>
+
 </head>
 <body id="fullScreen" data-spy="scroll" data-target=".navbar-collapse" data-offset="80">
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
             <![endif]-->
             <div class="container">
-                <div id="cover"></div>
+                <noscript>
+                    <div id="warning">
+                        <p>It looks like you may have disabled Javascript! Please allow RyanMadden.net to run scripts to see the site as it was meant to be!</p>
+                    </div>
+                </noscript>
+                <div id="cover" class="jsonly"></div>
             </div>
             <div id="wrapper" style="display: block;">
                 <div id="content" class="container">

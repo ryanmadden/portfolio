@@ -38,6 +38,9 @@
 
     <!-- Modernizr -->
     <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+
+    <noscript><style> .jsonly { display: none } </style></noscript>
+
 </head>
 <body id="fullScreen" data-spy="scroll" data-target=".navbar-collapse" data-offset="80">
 <!--[if lt IE 7]>
@@ -45,7 +48,12 @@
     <![endif]-->
     <!-- Cover to hide loading-->
     <div class="container">
-        <div id="cover"></div>
+        <noscript>
+            <div id="warning">
+                <p>It looks like you may have disabled Javascript! Please allow RyanMadden.net to run scripts to see the site as it was meant to be!</p>
+            </div>
+        </noscript>
+        <div id="cover" class="jsonly"></div>
     </div>
     <!-- Page content -->
     <div id="wrapper" style="display: block;">
