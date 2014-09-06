@@ -5,3 +5,4 @@ log/*.log
 log/*.log.[0-9]
 *.sublime-project
 *.sublime-workspace
+img/psd/
